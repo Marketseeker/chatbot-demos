@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfection Carpet Cleaners - AI Assistant Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #9d2310 0%, #c4281a 100%);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            max-width: 280px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .hero {
+            background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: 'Barlow Semi Condensed', 'Source Sans 3', sans-serif;
+            font-size: 2.5rem;
+            color: #9d2310;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .benefits {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            border-top: 4px solid #e9a825;
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .benefit h3 {
+            font-family: 'Barlow Semi Condensed', 'Source Sans 3', sans-serif;
+            color: #9d2310;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .benefit p {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        .chatbot-section {
+            background: linear-gradient(135deg, #e9a825 0%, #b07a14 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .chatbot-section h2 {
+            font-family: 'Barlow Semi Condensed', 'Source Sans 3', sans-serif;
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .chatbot-section p {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        
+        .chatbot-container {
+            max-width: 640px;
+            min-height: 520px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .footer {
+            background: #333;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .footer p {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+            
+            .chatbot-section h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://perfectioncleanresults.com/wp-content/uploads/2026/09/perfection-logo-full.webp" alt="Perfection Carpet Cleaners" class="logo">
+    </header>
+    
+    <section class="hero">
+        <h1>Get Instant Answers About Our Carpet Cleaning Services</h1>
+        <p>Experience our new AI assistant that can help you 24/7 with quotes, scheduling, and service information</p>
+    </section>
+    
+    <section class="benefits">
+        <div class="benefit">
+            <div class="benefit-icon">⏰</div>
+            <h3>Instant Availability</h3>
+            <p>Get answers about our services, pricing, and availability any time of day or night, even when our office is closed.</p>
+        </div>
+        
+        <div class="benefit">
+            <div class="benefit-icon">💬</div>
+            <h3>Quick Quotes</h3>
+            <p>Describe your carpet cleaning needs and receive helpful information instantly, without waiting for a callback.</p>
+        </div>
+        
+        <div class="benefit">
+            <div class="benefit-icon">📅</div>
+            <h3>Easy Scheduling Help</h3>
+            <p>Ask about our service areas, cleaning methods, and get guidance on booking your carpet cleaning appointment.</p>
+        </div>
+    </section>
+    
+    <section class="chatbot-section">
+        <h2>Try It Now</h2>
+        <p>Chat with our AI assistant below and see how it can help with your carpet cleaning questions</p>
+        
+        <div class="chatbot-container">
+<div id="chat_form"></div>
+<script src="https://platform.simplebotinstall.com/w/chat_form_plugin.js" data-bot-id="3791"></script>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Perfection Carpet Cleaners. Serving NH Seacoast and MA North Shore.</p>
+    </footer>
+</body>
+</html>
