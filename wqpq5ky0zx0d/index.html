@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Global - AI Chat Assistant Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            color: #0a2b32;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background-color: #0a2b32;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0a2b32 0%, #14525c 100%);
+            color: #ffffff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #8fb0b4;
+        }
+        
+        .benefits {
+            padding: 3rem 2rem;
+            background-color: #f8fafb;
+        }
+        
+        .benefits-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .benefit-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(10, 43, 50, 0.1);
+            border-left: 4px solid #ff7a59;
+        }
+        
+        .benefit-card h3 {
+            color: #0a2b32;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .benefit-card p {
+            color: #3c6b73;
+            font-size: 1rem;
+        }
+        
+        .chatbot-section {
+            padding: 4rem 2rem;
+            background-color: #ffffff;
+        }
+        
+        .chatbot-container {
+            max-width: 640px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .chatbot-container h2 {
+            color: #0a2b32;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .chatbot-container p {
+            color: #3c6b73;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .chatbot-embed-wrapper {
+            background-color: #f8fafb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            min-height: 520px;
+            box-shadow: 0 4px 16px rgba(10, 43, 50, 0.15);
+            border: 2px solid #8fb0b4;
+        }
+        
+        .footer {
+            background-color: #0a2b32;
+            color: #8fb0b4;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.875rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .benefits-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .chatbot-container h2 {
+                font-size: 1.5rem;
+            }
+            
+            .chatbot-embed-wrapper {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://chatbotglobal.com/brand_assets/chatbot-global-logo.svg" alt="Chatbot Global" class="logo">
+    </header>
+    
+    <section class="hero">
+        <h1>See How AI Chat Can Transform Your Business</h1>
+        <p>Experience an intelligent assistant that engages visitors, qualifies leads, and works 24/7—so you never miss another opportunity.</p>
+    </section>
+    
+    <section class="benefits">
+        <div class="benefits-container">
+            <div class="benefit-card">
+                <h3>Capture More Leads</h3>
+                <p>An AI chatbot greets every visitor instantly, qualifies their needs, and captures contact information—even when your team is offline.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Save Time & Resources</h3>
+                <p>Automate repetitive questions and initial customer interactions, freeing your team to focus on closing deals and serving customers.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Zero Risk, Pure Value</h3>
+                <p>Start completely free with no setup costs or monthly fees—you only pay when the chatbot delivers a qualified lead to your business.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="chatbot-section">
+        <div class="chatbot-container">
+            <h2>Try it now</h2>
+            <p>Chat with our AI assistant below and see how it works for your business.</p>
+            <div class="chatbot-embed-wrapper">
+<div id="chat_form"></div>
+<script src="https://platform.simplebotinstall.com/w/chat_form_plugin.js" data-bot-id="3791"></script>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Chatbot Global. Get started with your free AI chatbot today.</p>
+    </footer>
+</body>
+</html>
